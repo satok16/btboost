@@ -264,6 +264,7 @@ boost_library(
         ":integer",
         ":iterator",
         ":math",
+        ":noncopyable",
         ":range",
         ":ref",
         ":smart_ptr",
