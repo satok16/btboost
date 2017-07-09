@@ -263,6 +263,7 @@ boost_library(
         ":integer",
         ":math",
         ":ref",
+        ":smart_ptr",
         ":throw_exception",
         ":type",
         ":type_traits",
