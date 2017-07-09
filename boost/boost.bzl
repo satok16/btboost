@@ -3,7 +3,7 @@ hdrs_patterns = [
   "boost/%s.h",
   "boost/%s_fwd.h",
   "boost/%s.hpp",
-  "boost/%s_fwd.hpp",
+n  "boost/%s_fwd.hpp",
   "boost/%s/**/*.hpp",
   "boost/%s/**/*.ipp",
   "boost/%s/**/*.h",
@@ -61,8 +61,8 @@ def boost_library(name, defines=None, includes=None, hdrs=None, srcs=None, deps=
 def boost_deps():
   native.new_http_archive(
     name = "boost",
-    url = "https://nelhage.s3.amazonaws.com/rules_boost/boost_1_63_0.tar.bz2",
-    build_file = "@com_github_nelhage_boost//:BUILD.boost",
+    url = "https://storage.googleapis.com/satok_coldline_bucket_us/bt_public/boost_1_63_0.tar.bz2",
+    build_file = "@com_github_satok16_btboost//:BUILD.boost",
     type = "tar.bz2",
     strip_prefix = "boost_1_63_0/",
     sha256 = "beae2529f759f6b3bf3f4969a19c2e9d6f0c503edcb2de4a61d1428519fcb3b0",
