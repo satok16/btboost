@@ -257,6 +257,7 @@ boost_library(
 boost_library(
     name = "iostreams",
     deps = [
+        ":assert",
         ":config",
         ":detail",
         ":math",
