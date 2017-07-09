@@ -255,6 +255,10 @@ boost_library(
 )
 
 boost_library(
+    name = "iostreams",
+)
+
+boost_library(
     name = "limits",
 )
 
