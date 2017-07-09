@@ -260,6 +260,7 @@ boost_library(
         ":assert",
         ":config",
         ":detail",
+        ":integer",
         ":math",
         ":throw_exception",
         ":type",
