@@ -258,6 +258,7 @@ boost_library(
     name = "iostreams",
     deps = [
         ":assert",
+        ":concept",
         ":config",
         ":detail",
         ":integer",
