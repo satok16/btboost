@@ -265,6 +265,7 @@ boost_library(
         ":throw_exception",
         ":type",
         ":type_traits",
+        ":utility",
     ],
 )
 
