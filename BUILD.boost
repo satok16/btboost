@@ -262,6 +262,7 @@ boost_library(
         ":detail",
         ":math",
         ":throw_exception",
+        ":type",
         ":type_traits",
     ],
 )
