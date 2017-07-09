@@ -256,6 +256,9 @@ boost_library(
 
 boost_library(
     name = "iostreams",
+    deps = [
+        ":config",
+    ],
 )
 
 boost_library(
