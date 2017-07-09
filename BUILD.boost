@@ -259,6 +259,7 @@ boost_library(
     deps = [
         ":config",
         ":detail",
+        ":throw_exception",
     ],
 )
 
