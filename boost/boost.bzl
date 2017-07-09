@@ -3,7 +3,7 @@ hdrs_patterns = [
   "boost/%s.h",
   "boost/%s_fwd.h",
   "boost/%s.hpp",
-n  "boost/%s_fwd.hpp",
+  "boost/%s_fwd.hpp",
   "boost/%s/**/*.hpp",
   "boost/%s/**/*.ipp",
   "boost/%s/**/*.h",
