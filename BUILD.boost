@@ -261,6 +261,7 @@ boost_library(
         ":config",
         ":detail",
         ":integer",
+        ":iterator",
         ":math",
         ":ref",
         ":smart_ptr",
