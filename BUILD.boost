@@ -500,6 +500,9 @@ boost_library(
 
 boost_library(
     name = "thread",
+    hdrs = [
+        "boost/enable_shared_from_this.hpp",
+    ],
     deps = [
         ":chrono",
         ":config",
