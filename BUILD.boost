@@ -504,6 +504,7 @@ boost_library(
         ":chrono",
         ":config",
         ":core",
+        "date_time",
         ":detail",
         ":system",
         ":type_traits",
