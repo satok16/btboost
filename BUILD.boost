@@ -514,6 +514,7 @@ boost_library(
         "date_time",
         ":detail",
         ":system",
+        ":type",
         ":type_traits",
     ],
 )
