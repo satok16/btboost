@@ -516,6 +516,7 @@ boost_library(
         "libs/thread/src/pthread/thread.cpp",
         "boost/atomic.hpp",
         "boost/enable_shared_from_this.hpp",
+        "boost/exception_ptr.hpp",
     ],
     deps = [
         ":atomic",
