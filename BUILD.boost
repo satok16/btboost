@@ -527,11 +527,13 @@ boost_library(
 boost_library(
     name = "thread",
     srcs = [
+        "libs/thread/src/pthread/once_atomic.cpp",
         "libs/thread/src/pthread/thread.cpp",
         "boost/atomic.hpp",
         "boost/enable_shared_from_this.hpp",
         "boost/exception_ptr.hpp",
         "boost/lexical_cast.hpp",
+        "boost/thread/pthread/once_atomic.hpp",
     ],
     deps = [
         ":algorithm",
@@ -556,10 +558,6 @@ boost_library(
         ":type_index",
         ":type_traits",
     ],
-)
-
-boost_library(
-    name = "thread_detail",
 )
 
 boost_library(
