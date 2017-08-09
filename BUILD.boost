@@ -519,6 +519,7 @@ boost_library(
         "boost/exception_ptr.hpp",
     ],
     deps = [
+        ":algorithm",
         ":atomic",
         ":bind",
         ":chrono",
