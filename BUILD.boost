@@ -54,7 +54,7 @@ boost_library(
         "boost/cstdint.hpp",
         "boost/memory_order.hpp",
     ],
-    srcs = [
+    hdrs = [
         "boost/atomic.hpp",
     ],
     deps = [
