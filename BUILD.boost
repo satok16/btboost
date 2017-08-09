@@ -528,6 +528,7 @@ boost_library(
         ":detail",
         ":functional",
         ":io",
+        ":optional",
         ":system",
         ":tuple",
         ":type",
