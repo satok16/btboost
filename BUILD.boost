@@ -49,6 +49,13 @@ boost_library(
 )
 
 boost_library(
+    name = "atomic",
+    hdrs = [
+        "boost/atomic.hpp",
+    ],
+)
+
+boost_library(
     name = "bind",
     deps = [
         ":get_pointer",
@@ -502,12 +509,12 @@ boost_library(
     name = "thread",
     srcs = [
         "libs/thread/src/pthread/thread.cpp",
-        "boost/atomic.hpp",
     ],
     hdrs = [
         "boost/enable_shared_from_this.hpp",
     ],
     deps = [
+        ":atomic",
         ":bind",
         ":chrono",
         ":config",
