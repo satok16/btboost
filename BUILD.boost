@@ -51,6 +51,7 @@ boost_library(
 boost_library(
     name = "atomic",
     srcs = [
+        "boost/cstdint.hpp",
         "boost/memory_order.hpp",
     ],
     deps = [
