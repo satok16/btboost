@@ -517,6 +517,7 @@ boost_library(
         "boost/atomic.hpp",
         "boost/enable_shared_from_this.hpp",
         "boost/exception_ptr.hpp",
+        "boost/lexical_cast.hpp",
     ],
     deps = [
         ":algorithm",
