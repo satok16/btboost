@@ -523,6 +523,7 @@ boost_library(
         ":atomic",
         ":bind",
         ":chrono",
+        ":concept",
         ":config",
         ":core",
         "date_time",
