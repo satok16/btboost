@@ -293,6 +293,7 @@ boost_library(
     deps = [
         ":array",
         ":container",
+        ":math",
         ":numeric",
     ],
 )
