@@ -50,6 +50,9 @@ boost_library(
 
 boost_library(
     name = "atomic",
+    deps = [
+        ":config",
+    ],
 )
 
 boost_library(
