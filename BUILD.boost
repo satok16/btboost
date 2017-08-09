@@ -513,6 +513,7 @@ boost_library(
         ":core",
         "date_time",
         ":detail",
+        ":io",
         ":system",
         ":type",
         ":type_traits",
