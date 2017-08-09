@@ -290,6 +290,9 @@ boost_library(
 
 boost_library(
     name = "lexical_cast",
+    deps = [
+        ":numeric",
+    ],
 )
 
 boost_library(
@@ -332,6 +335,10 @@ boost_library(
         ":static_assert",
         ":tuple",
     ],
+)
+
+boost_library(
+    name = "numeric",
 )
 
 boost_library(
