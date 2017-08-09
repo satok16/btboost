@@ -50,9 +50,6 @@ boost_library(
 
 boost_library(
     name = "atomic",
-    hdrs = [
-        "boost/atomic.hpp",
-    ],
 )
 
 boost_library(
@@ -509,6 +506,7 @@ boost_library(
     name = "thread",
     srcs = [
         "libs/thread/src/pthread/thread.cpp",
+        "boost/atomic.hpp",
     ],
     hdrs = [
         "boost/enable_shared_from_this.hpp",
