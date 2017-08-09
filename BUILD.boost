@@ -537,6 +537,7 @@ boost_library(
         ":functional",
         ":io",
         ":iterator",
+        ":lexical_cast",
         ":optional",
         ":system",
         ":tuple",
