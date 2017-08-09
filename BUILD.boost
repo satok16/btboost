@@ -533,6 +533,7 @@ boost_library(
         ":system",
         ":tuple",
         ":type",
+        ":type_index",
         ":type_traits",
     ],
 )
