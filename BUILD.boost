@@ -528,6 +528,7 @@ boost_library(
         ":functional",
         ":io",
         ":system",
+        ":tuple",
         ":type",
         ":type_traits",
     ],
