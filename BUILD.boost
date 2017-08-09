@@ -507,6 +507,7 @@ boost_library(
         "boost/enable_shared_from_this.hpp",
     ],
     deps = [
+        ":bind",
         ":chrono",
         ":config",
         ":core",
