@@ -530,6 +530,7 @@ boost_library(
         ":function",
         ":functional",
         ":io",
+        ":iterator",
         ":optional",
         ":system",
         ":tuple",
