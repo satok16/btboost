@@ -54,6 +54,9 @@ boost_library(
         "boost/cstdint.hpp",
         "boost/memory_order.hpp",
     ],
+    srcs = [
+        "boost/atomic.hpp",
+    ],
     deps = [
         ":assert",
         ":config",
@@ -290,6 +293,9 @@ boost_library(
 
 boost_library(
     name = "lexical_cast",
+    hdrs = [
+        "boost/lexical_cast.hpp",
+    ],
     deps = [
         ":array",
         ":container",
@@ -529,10 +535,8 @@ boost_library(
     srcs = [
         "libs/thread/src/pthread/once_atomic.cpp",
         "libs/thread/src/pthread/thread.cpp",
-        "boost/atomic.hpp",
         "boost/enable_shared_from_this.hpp",
         "boost/exception_ptr.hpp",
-        "boost/lexical_cast.hpp",
         "boost/thread/pthread/once_atomic.hpp",
     ],
     deps = [
