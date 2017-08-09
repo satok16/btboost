@@ -291,7 +291,6 @@ boost_library(
 boost_library(
     name = "lexical_cast",
     hdrs = [
-        "boost/lexical_cast.hpp",
     ],
     deps = [
         ":array",
@@ -536,6 +535,7 @@ boost_library(
         "boost/enable_shared_from_this.hpp",
         "boost/exception_ptr.hpp",
         "boost/thread/pthread/once_atomic.hpp",
+        "boost/lexical_cast.hpp",
     ],
     deps = [
         ":algorithm",
