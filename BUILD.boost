@@ -292,6 +292,7 @@ boost_library(
     name = "lexical_cast",
     deps = [
         ":array",
+        ":container",
         ":numeric",
     ],
 )
