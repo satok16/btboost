@@ -550,11 +550,16 @@ boost_library(
         ":lexical_cast",
         ":optional",
         ":system",
+        ":thread_detail",
         ":tuple",
         ":type",
         ":type_index",
         ":type_traits",
     ],
+)
+
+boost_library(
+    name = "thread_detail",
 )
 
 boost_library(
