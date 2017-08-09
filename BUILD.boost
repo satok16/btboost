@@ -55,7 +55,6 @@ boost_library(
         "boost/memory_order.hpp",
     ],
     hdrs = [
-        "boost/atomic.hpp",
     ],
     deps = [
         ":assert",
@@ -534,6 +533,7 @@ boost_library(
     srcs = [
         "libs/thread/src/pthread/once_atomic.cpp",
         "libs/thread/src/pthread/thread.cpp",
+        "boost/atomic.hpp",
         "boost/enable_shared_from_this.hpp",
         "boost/exception_ptr.hpp",
         "boost/thread/pthread/once_atomic.hpp",
