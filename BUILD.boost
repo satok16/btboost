@@ -526,6 +526,7 @@ boost_library(
         ":core",
         "date_time",
         ":detail",
+        ":function",
         ":functional",
         ":io",
         ":optional",
