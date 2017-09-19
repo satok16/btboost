@@ -116,12 +116,6 @@ boost_library(
 
 boost_library(
     name = "container",
-    includes = [
-        "libs/container/src/",
-    ],
-    srcs = [
-        "libs/container/src/dlmalloc_ext_2_8_6.c",
-    ],
     deps = [
         ":config",
         ":core",
