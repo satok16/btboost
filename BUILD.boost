@@ -116,6 +116,9 @@ boost_library(
 
 boost_library(
     name = "container",
+    includes = [
+        "libs/container/src/",
+    ],
     deps = [
         ":config",
         ":core",
