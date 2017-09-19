@@ -29,7 +29,7 @@ def includes_list(library_name):
 def hdr_list(library_name):
   return native.glob([p % (library_name,) for p in hdrs_patterns])
 
-def boost_library(name, defines=None, includes=None, hdrs=None, srcs=None, deps=None, copts=None):
+def boost_library(name, defines=None, includes=None, hdrs=None, textual_hdrs=None, srcs=None, deps=None, copts=None):
   if defines == None:
     defines = []
 
@@ -38,6 +38,9 @@ def boost_library(name, defines=None, includes=None, hdrs=None, srcs=None, deps=
 
   if hdrs == None:
     hdrs = []
+
+  if textual_hdrs == None:
+    textual_hdrs = []
 
   if srcs == None:
     srcs = []
@@ -54,6 +57,7 @@ def boost_library(name, defines=None, includes=None, hdrs=None, srcs=None, deps=
     defines = defines,
     includes = includes_list(name) + includes,
     hdrs = hdr_list(name) + hdrs,
+    textual_hdrs = textual_hdrs,
     srcs = srcs_list(name) + srcs,
     deps = deps,
     copts = default_copts + copts,
