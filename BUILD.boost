@@ -404,6 +404,7 @@ boost_library(
         ":iterator",
         ":noncopyable",
         ":throw_exception",
+        ":type",
         ":type_index",
         ":type_traits",
         ":utility",
