@@ -404,6 +404,7 @@ boost_library(
         ":function",
         ":iterator",
         ":noncopyable",
+        ":shared_ptr",
         ":throw_exception",
         ":type",
         ":type_index",
