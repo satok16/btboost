@@ -403,6 +403,7 @@ boost_library(
         ":cstdint",
         ":detail",
         ":function",
+        ":integer",
         ":iterator",
         ":noncopyable",
         ":shared_ptr",
