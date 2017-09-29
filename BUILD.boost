@@ -401,6 +401,7 @@ boost_library(
         ":bind",
         ":config",
         ":detail",
+        ":function",
         ":iterator",
         ":noncopyable",
         ":throw_exception",
