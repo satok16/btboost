@@ -400,6 +400,7 @@ boost_library(
     deps = [
         ":bind",
         ":config",
+        ":cstdint",
         ":detail",
         ":function",
         ":iterator",
