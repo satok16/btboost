@@ -394,6 +394,9 @@ boost_library(
 
 boost_library(
     name = "program_options",
+    deps = [
+        ":config",
+    ],
 )
 
 boost_library(
