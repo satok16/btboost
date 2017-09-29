@@ -398,6 +398,7 @@ boost_library(
         "boost/any.hpp",
     ],
     deps = [
+        ":bind",
         ":config",
         ":detail",
         ":iterator",
