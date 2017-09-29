@@ -394,6 +394,9 @@ boost_library(
 
 boost_library(
     name = "program_options",
+    srcs = [
+        "boost/any.hpp",
+    ],
     deps = [
         ":config",
     ],
