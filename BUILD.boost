@@ -405,6 +405,7 @@ boost_library(
         ":function",
         ":integer",
         ":iterator",
+        ":lexical_cast",
         ":noncopyable",
         ":shared_ptr",
         ":smart_ptr",
