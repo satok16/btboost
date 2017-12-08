@@ -397,6 +397,10 @@ boost_library(
 )
 
 boost_library(
+    name = "polymorphic_cast",
+)
+
+boost_library(
     name = "predef",
 )
 
