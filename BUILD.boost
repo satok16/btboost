@@ -207,6 +207,7 @@ boost_library(
     name = "foreach",
     deps = [
         ":config",
+        ":detail",
     ],
 )
 
