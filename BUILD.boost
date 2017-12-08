@@ -432,6 +432,7 @@ boost_library(
         ":integer",
         ":noncopyable",
         ":operators",
+        ":shared_ptr",
         ":throw_exception",
         ":type",
         ":type_index",
