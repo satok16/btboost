@@ -525,6 +525,12 @@ boost_library(
 )
 
 boost_library(
+    name = "proto",
+    deps = [
+    ],
+)
+
+boost_library(
     name = "python",
     copts = ["-I/usr/include/python2.7"],
     srcs = [
@@ -872,6 +878,9 @@ boost_library(
 
 boost_library(
     name = "xpressive",
+    deps = [
+        ":proto",
+    ]
 )
 
 boost_library(
