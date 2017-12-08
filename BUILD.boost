@@ -427,6 +427,7 @@ boost_library(
     copts = ["-I/usr/include/python2.7"],
     deps = [
         ":config",
+        ":detail",
     ],
 )
 
