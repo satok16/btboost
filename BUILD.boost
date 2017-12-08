@@ -251,6 +251,7 @@ boost_library(
     deps = [
         ":foreach",
         ":function",
+        ":multi_index",
         ":property_map",
         ":ref",
         ":parameter",
