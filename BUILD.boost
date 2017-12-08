@@ -433,6 +433,7 @@ boost_library(
         ":config",
         ":detail",
         ":function",
+        ":implicit_cast",
         ":integer",
         ":noncopyable",
         ":operators",
