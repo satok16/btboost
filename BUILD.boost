@@ -430,6 +430,7 @@ boost_library(
         ":detail",
         ":function",
         ":noncopyable",
+        ":operators",
         ":throw_exception",
         ":type",
         ":type_traits",
