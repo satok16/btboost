@@ -667,6 +667,7 @@ boost_library(
         ":shared_ptr",
         ":throw_exception",
         ":utility",
+        ":weak_ptr",
     ],
 )
 
@@ -840,6 +841,10 @@ boost_library(
 
 boost_library(
     name = "visit_each",
+)
+
+boost_library(
+    name = "weak_ptr",
 )
 
 boost_library(
