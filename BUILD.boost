@@ -241,6 +241,7 @@ boost_library(
     name = "graph",
     deps = [
         ":foreach",
+        ":property_map",
     ],
 )
 
@@ -452,6 +453,10 @@ boost_library(
         ":type_traits",
         ":utility",
     ],
+)
+
+boost_library(
+    name = "property_map",
 )
 
 boost_library(
