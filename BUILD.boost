@@ -488,6 +488,7 @@ boost_library(
         ":implicit_cast",
         ":integer",
         ":iterator",
+        ":lexical_cast",
         ":noncopyable",
         ":numeric",
         ":operators",
