@@ -433,6 +433,7 @@ boost_library(
         ":noncopyable",
         ":operators",
         ":shared_ptr",
+        ":smart_ptr",
         ":throw_exception",
         ":type",
         ":type_index",
