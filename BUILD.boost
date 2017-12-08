@@ -401,6 +401,10 @@ boost_library(
 )
 
 boost_library(
+    name = "pending",
+)
+
+boost_library(
     name = "polymorphic_cast",
 )
 
@@ -484,6 +488,7 @@ boost_library(
         ":noncopyable",
         ":numeric",
         ":operators",
+        ":pending",
         ":polymorphic_cast",
         ":shared_ptr",
         ":smart_ptr",
