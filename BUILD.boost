@@ -443,6 +443,10 @@ boost_library(
 )
 
 boost_library(
+    name = "pointee",
+)
+
+boost_library(
     name = "predef",
 )
 
