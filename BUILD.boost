@@ -453,6 +453,7 @@ boost_library(
         ":iterator",
         ":noncopyable",
         ":operators",
+        ":polymorphic_cast",
         ":shared_ptr",
         ":smart_ptr",
         ":throw_exception",
