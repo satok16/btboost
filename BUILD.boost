@@ -439,6 +439,7 @@ boost_library(
     copts = ["-I/usr/include/python2.7"],
     deps = [
         ":call_traits",
+        ":cast",
         ":compressed_pair",
         ":config",
         ":detail",
