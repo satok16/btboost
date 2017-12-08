@@ -441,7 +441,7 @@ boost_library(
 boost_library(
     name = "python",
     copts = ["-I/usr/include/python2.7"],
-    textual_hdrs = [
+    hdrs = [
         "libs/python/src/object/function.cpp",
     ],
     deps = [
@@ -466,6 +466,7 @@ boost_library(
         ":type_traits",
         ":utility",
     ],
+    linkstatic = 1,
 )
 
 boost_library(
