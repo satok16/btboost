@@ -49,7 +49,8 @@ def boost_library(name, defines=None, includes=None, hdrs=None, textual_hdrs=Non
   if copts == None:
     copts = []
 
-  return native.cc_library(
+  native.cc_library(
+    alwayslink = alwayslink,
     name = name,
     visibility = ["//visibility:public"],
     defines = defines,
@@ -61,7 +62,21 @@ def boost_library(name, defines=None, includes=None, hdrs=None, textual_hdrs=Non
     copts = default_copts + copts,
     linkstatic = linkstatic,
     licenses = ["notice"],
-    alwayslink = alwayslink,
+  )
+
+  native.cc_library(
+    alwayslink = 1,
+    name = name + "_static",
+    visibility = ["//visibility:public"],
+    defines = defines,
+    includes = includes_list(name) + includes,
+    hdrs = hdr_list(name) + hdrs,
+    textual_hdrs = textual_hdrs,
+    srcs = srcs_list(name) + srcs,
+    deps = deps,
+    copts = default_copts + copts,
+    linkstatic = 1,
+    licenses = ["notice"],
   )
 
 def boost_deps():
