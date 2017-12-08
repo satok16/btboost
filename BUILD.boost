@@ -284,6 +284,10 @@ boost_library(
 )
 
 boost_library(
+    name = "indirect_reference",
+)
+
+boost_library(
     name = "integer",
     hdrs = [
         "boost/integer_traits.hpp",
@@ -298,6 +302,7 @@ boost_library(
     name = "iterator",
     deps = [
         ":detail",
+        ":indirect_reference",
         ":static_assert",
     ],
 )
