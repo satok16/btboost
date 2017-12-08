@@ -429,6 +429,7 @@ boost_library(
         ":config",
         ":detail",
         ":function",
+        ":throw_exception",
         ":type_traits",
     ],
 )
