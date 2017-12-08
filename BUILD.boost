@@ -270,6 +270,7 @@ boost_library(
         ":multi_index_container",
         ":property_map",
         ":ref",
+        ":regex",
         ":parameter",
         ":pending",
         ":typeof",
