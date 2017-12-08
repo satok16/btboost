@@ -766,7 +766,14 @@ boost_library(
 )
 
 boost_library(
+    name = "unordered",
+)
+
+boost_library(
     name = "unordered_set",
+    deps = [
+        ":unordered",
+    ],
 )
 
 boost_library(
