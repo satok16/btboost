@@ -22,6 +22,7 @@ boost_library(
         ":iterator",
         ":mpl",
         ":noncopyable",
+        ":pointee",
         ":smart_ptr",
         ":spirit",
     ],
