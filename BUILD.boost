@@ -632,6 +632,7 @@ boost_library(
         ":call_traits",
         ":config",
         ":detail",
+        ":function",
         ":operators",
         ":type_traits",
     ],
