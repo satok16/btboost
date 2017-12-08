@@ -452,6 +452,7 @@ boost_library(
         ":integer",
         ":iterator",
         ":noncopyable",
+        ":numeric",
         ":operators",
         ":polymorphic_cast",
         ":shared_ptr",
