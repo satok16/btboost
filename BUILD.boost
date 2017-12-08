@@ -249,6 +249,7 @@ boost_library(
     name = "graph",
     deps = [
         ":foreach",
+        ":function",
         ":property_map",
         ":ref",
         ":parameter",
