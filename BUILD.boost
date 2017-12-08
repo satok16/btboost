@@ -273,6 +273,7 @@ boost_library(
         ":regex",
         ":parameter",
         ":pending",
+        ":property_tree",
         ":typeof",
         ":unordered_set",
         ":xpressive",
@@ -521,6 +522,12 @@ boost_library(
         ":concept_archetype",
         ":concept_check",
         ":lexical_cast",
+    ],
+)
+
+boost_library(
+    name = "property_tree",
+    deps = [
     ],
 )
 
