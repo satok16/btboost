@@ -481,6 +481,7 @@ boost_library(
         ":concept",
         ":concept_archetype",
         ":concept_check",
+        ":lexical_cast",
     ],
 )
 
