@@ -441,6 +441,9 @@ boost_library(
 
 boost_library(
     name = "pending",
+    deps = [
+        ":unordered_map",
+    ],
 )
 
 boost_library(
@@ -787,6 +790,13 @@ boost_library(
 
 boost_library(
     name = "unordered",
+)
+
+boost_library(
+    name = "unordered_map",
+    deps = [
+        ":unordered",
+    ],
 )
 
 boost_library(
