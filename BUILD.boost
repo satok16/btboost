@@ -879,6 +879,7 @@ boost_library(
 boost_library(
     name = "xpressive",
     deps = [
+        ":implicit_cast",
         ":proto",
     ]
 )
