@@ -195,6 +195,10 @@ boost_library(
 )
 
 boost_library(
+    name = "enable_shared_from_this",
+)
+
+boost_library(
     name = "exception",
     deps = [
         ":config",
@@ -664,6 +668,7 @@ boost_library(
     deps = [
         ":align",
         ":core",
+        ":enable_shared_from_this",
         ":intrusive_ptr",
         ":predef",
         ":scoped_array",
