@@ -466,7 +466,7 @@ boost_library(
         ":type_traits",
         ":utility",
     ],
-    linkstatic = 1,
+    alwayslink = 1,
 )
 
 boost_library(
