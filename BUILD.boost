@@ -462,8 +462,6 @@ boost_library(
         "libs/python/src/object/life_support.cpp",
         "libs/python/src/object/pickle_support.cpp",
         "libs/python/src/object/stl_iterator.cpp",
-        "libs/python/src/object_operators.cpp",
-        "libs/python/src/object_protocol.cpp",
     ],
     hdrs = [
     ],
