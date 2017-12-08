@@ -251,6 +251,7 @@ boost_library(
         ":foreach",
         ":property_map",
         ":ref",
+        ":typeof",
     ],
 )
 
@@ -740,6 +741,10 @@ boost_library(
         ":mpl",
         ":static_assert",
     ],
+)
+
+boost_library(
+    name = "typeof",
 )
 
 boost_library(
