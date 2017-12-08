@@ -13,6 +13,10 @@ boost_library(
 )
 
 boost_library(
+    name = "any",
+)
+
+boost_library(
     name = "archive",
     deps = [
         ":assert",
@@ -488,6 +492,7 @@ boost_library(
 boost_library(
     name = "property_map",
     deps = [
+        ":any",
         ":concept",
         ":concept_archetype",
         ":concept_check",
