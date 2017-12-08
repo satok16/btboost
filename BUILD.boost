@@ -263,6 +263,7 @@ boost_library(
 boost_library(
     name = "graph",
     deps = [
+        ":algorithm",
         ":foreach",
         ":function",
         ":multi_index",
