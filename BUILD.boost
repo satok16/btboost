@@ -108,6 +108,10 @@ boost_library(
 )
 
 boost_library(
+    name = "concept_archetype",
+)
+
+boost_library(
     name = "concept_check",
 )
 
@@ -465,6 +469,7 @@ boost_library(
     name = "property_map",
     deps = [
         ":concept",
+        ":concept_archetype",
         ":concept_check",
     ],
 )
