@@ -475,6 +475,7 @@ boost_library(
         ":compressed_pair",
         ":config",
         ":detail",
+        ":foreach",
         ":function",
         ":graph",
         ":implicit_cast",
