@@ -497,6 +497,7 @@ boost_library(
         ":smart_ptr",
         ":swap",
         ":throw_exception",
+        ":tuple",
         ":type",
         ":type_index",
         ":type_traits",
