@@ -78,6 +78,10 @@ boost_library(
 )
 
 boost_library(
+    name = "cast",
+)
+
+boost_library(
     name = "cerrno",
 )
 
