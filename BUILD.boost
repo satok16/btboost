@@ -154,6 +154,9 @@ boost_library(
     srcs = [
         "boost/checked_delete.hpp",
     ],
+    deps = [
+        ":utility",
+    ],
 )
 
 boost_library(
