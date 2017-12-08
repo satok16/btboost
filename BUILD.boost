@@ -275,6 +275,7 @@ boost_library(
         ":pending",
         ":typeof",
         ":unordered_set",
+        ":xpressive",
     ],
 )
 
@@ -867,6 +868,10 @@ boost_library(
 
 boost_library(
     name = "weak_ptr",
+)
+
+boost_library(
+    name = "xpressive",
 )
 
 boost_library(
