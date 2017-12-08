@@ -253,6 +253,10 @@ boost_library(
 )
 
 boost_library(
+    name = "fusion",
+)
+
+boost_library(
     name = "get_pointer",
 )
 
@@ -306,6 +310,7 @@ boost_library(
     name = "iterator",
     deps = [
         ":detail",
+        ":fusion",
         ":indirect_reference",
         ":static_assert",
     ],
