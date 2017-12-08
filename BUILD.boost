@@ -424,6 +424,7 @@ boost_library(
 
 boost_library(
     name = "python",
+    copts = ["-I/usr/include/python2.7"],
 )
 
 boost_library(
