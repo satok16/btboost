@@ -652,6 +652,7 @@ boost_library(
 boost_library(
     name = "spirit",
     deps = [
+        ":compressed_pair",
         ":optional",
         ":ref",
     ],
