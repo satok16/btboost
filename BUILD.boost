@@ -217,6 +217,7 @@ boost_library(
         ":detail",
         ":mpl",
         ":noncopyable",
+        ":range",
     ],
 )
 
