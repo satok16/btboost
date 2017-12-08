@@ -429,6 +429,7 @@ boost_library(
         ":config",
         ":detail",
         ":function",
+        ":integer",
         ":noncopyable",
         ":operators",
         ":throw_exception",
