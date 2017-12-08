@@ -209,6 +209,7 @@ boost_library(
         ":config",
         ":detail",
         ":mpl",
+        ":noncopyable",
     ],
 )
 
