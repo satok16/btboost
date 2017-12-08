@@ -225,6 +225,7 @@ boost_library(
     name = "function",
     deps = [
         ":bind",
+        ":type_index",
     ],
     hdrs = [
         "boost/function_equal.hpp",
