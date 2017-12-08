@@ -467,7 +467,6 @@ boost_library(
         ":utility",
     ],
     alwayslink = 1,
-    linkstatic = 1,
 )
 
 boost_library(
