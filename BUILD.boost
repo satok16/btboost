@@ -459,6 +459,7 @@ boost_library(
     name = "property_map",
     deps = [
         ":concept",
+        ":concept_check",
     ],
 )
 
