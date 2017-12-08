@@ -441,6 +441,7 @@ boost_library(
         ":function",
         ":implicit_cast",
         ":integer",
+        ":iterator",
         ":noncopyable",
         ":operators",
         ":shared_ptr",
