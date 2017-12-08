@@ -251,6 +251,7 @@ boost_library(
         ":foreach",
         ":property_map",
         ":ref",
+        ":parameter",
         ":typeof",
     ],
 )
