@@ -205,6 +205,9 @@ boost_library(
 
 boost_library(
     name = "foreach",
+    deps = [
+        ":config",
+    ],
 )
 
 boost_library(
