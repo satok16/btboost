@@ -233,6 +233,10 @@ boost_library(
 )
 
 boost_library(
+    name = "graph",
+)
+
+boost_library(
     name = "heap",
     deps = [
         ":parameter",
@@ -472,6 +476,7 @@ boost_library(
         ":config",
         ":detail",
         ":function",
+        ":graph",
         ":implicit_cast",
         ":integer",
         ":iterator",
