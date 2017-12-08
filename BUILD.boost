@@ -424,9 +424,6 @@ boost_library(
 
 boost_library(
     name = "python",
-    hdrs = [
-        "boost/python.hpp",
-    ],
 )
 
 boost_library(
