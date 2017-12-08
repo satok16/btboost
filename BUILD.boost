@@ -322,7 +322,6 @@ boost_library(
     deps = [
         ":assert",
         ":detail",
-        ":smart_ptr",
     ],
 )
 
@@ -665,6 +664,7 @@ boost_library(
     deps = [
         ":align",
         ":core",
+        ":intrusive_ptr",
         ":predef",
         ":scoped_array",
         ":scoped_ptr",
