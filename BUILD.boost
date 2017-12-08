@@ -262,6 +262,7 @@ boost_library(
         ":property_map",
         ":ref",
         ":parameter",
+        ":pending",
         ":typeof",
         ":unordered_set",
     ],
