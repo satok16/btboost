@@ -332,6 +332,7 @@ boost_library(
         ":array",
         ":container",
         ":math",
+        ":range",
         ":numeric",
     ],
 )
