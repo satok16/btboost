@@ -492,6 +492,7 @@ boost_library(
         ":polymorphic_cast",
         ":shared_ptr",
         ":smart_ptr",
+        ":swap",
         ":throw_exception",
         ":type",
         ":type_index",
