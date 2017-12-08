@@ -434,6 +434,7 @@ boost_library(
     name = "python",
     copts = ["-I/usr/include/python2.7"],
     deps = [
+        ":call_traits",
         ":compressed_pair",
         ":config",
         ":detail",
