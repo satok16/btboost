@@ -253,6 +253,7 @@ boost_library(
         ":foreach",
         ":function",
         ":multi_index",
+        ":multi_index_container",
         ":property_map",
         ":ref",
         ":parameter",
@@ -393,6 +394,10 @@ boost_library(
         ":static_assert",
         ":tuple",
     ],
+)
+
+boost_library(
+    name = "multi_index_container",
 )
 
 boost_library(
