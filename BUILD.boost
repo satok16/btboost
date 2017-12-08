@@ -319,6 +319,10 @@ boost_library(
 )
 
 boost_library(
+    name = "iterator_adaptors",
+)
+
+boost_library(
     name = "intrusive",
     deps = [
         ":assert",
@@ -692,6 +696,7 @@ boost_library(
     name = "spirit",
     deps = [
         ":compressed_pair",
+        ":iterator_adaptors",
         ":optional",
         ":ref",
     ],
