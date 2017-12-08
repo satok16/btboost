@@ -434,6 +434,7 @@ boost_library(
         ":operators",
         ":throw_exception",
         ":type",
+        ":type_index",
         ":type_traits",
         ":utility",
     ],
