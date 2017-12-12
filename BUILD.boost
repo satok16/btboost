@@ -563,7 +563,6 @@ boost_library(
         "libs/python/src/object/stl_iterator.cpp",
     ],
     hdrs = [
-        "boost/python/module_init.hpp",
     ],
     deps = [
         ":call_traits",
