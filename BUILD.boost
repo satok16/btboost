@@ -42,9 +42,6 @@ boost_library(
 
 boost_library(
     name = "asio",
-    hdrs = [
-        "boost/asio.hpp",
-    ],
     deps = [
         ":bind",
         ":date_time",
