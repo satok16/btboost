@@ -90,3 +90,10 @@ def boost_deps():
     strip_prefix = "boost_1_63_0/",
     sha256 = "beae2529f759f6b3bf3f4969a19c2e9d6f0c503edcb2de4a61d1428519fcb3b0",
   )
+
+def local_boost_deps():
+  native.new_local_repository(
+    name = "boost",
+    path = "/tmp/boost_1_63_0",
+    build_file = "@com_github_satok16_btboost//:BUILD.boost",
+  )
