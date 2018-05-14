@@ -105,6 +105,7 @@ genrule(
         "echo python include dir = $$PYTHON_INCLUDE_DIR",
         "[[ ! -d $$PYTHON_INCLUDE_DIR ]] && echo $$PYTHON_INCLUDE_DIR not found.  Install libpython2.7-dev. && exit 1",
         "cd $$INSTALL_DIR",
+        "rm *",
         "ln -s $$PYTHON_INCLUDE_DIR/* .",
     ]),
 )
