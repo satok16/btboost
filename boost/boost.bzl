@@ -27,7 +27,7 @@ def includes_list(library_name):
 def hdr_list(library_name):
   return native.glob([p % (library_name,) for p in hdrs_patterns])
 
-def boost_library(name, defines=None, includes=None, hdrs=None, textual_hdrs=None, srcs=None, deps=None, copts=None, linkstatic=0, alwayslink=0, linkopts=[]):
+def boost_library(name, defines=None, includes=None, hdrs=None, textual_hdrs=None, srcs=None, deps=None, copts=None, original_name=None, linkstatic=0, alwayslink=0, linkopts=[]):
   if defines == None:
     defines = []
 
@@ -49,15 +49,18 @@ def boost_library(name, defines=None, includes=None, hdrs=None, textual_hdrs=Non
   if copts == None:
     copts = []
 
+  if original_name == None:
+    original_name = name
+
   native.cc_library(
     alwayslink = alwayslink,
     name = name,
     visibility = ["//visibility:public"],
     defines = defines,
-    includes = includes_list(name) + includes,
-    hdrs = hdr_list(name) + hdrs,
+    includes = includes_list(original_name) + includes,
+    hdrs = hdr_list(original_name) + hdrs,
     textual_hdrs = textual_hdrs,
-    srcs = srcs_list(name) + srcs,
+    srcs = srcs_list(original_name) + srcs,
     deps = deps,
     copts = default_copts + copts,
     linkstatic = linkstatic,
@@ -70,10 +73,10 @@ def boost_library(name, defines=None, includes=None, hdrs=None, textual_hdrs=Non
     name = name + "_static",
     visibility = ["//visibility:public"],
     defines = defines,
-    includes = includes_list(name) + includes,
-    hdrs = hdr_list(name) + hdrs,
+    includes = includes_list(original_name) + includes,
+    hdrs = hdr_list(original_name) + hdrs,
     textual_hdrs = textual_hdrs,
-    srcs = srcs_list(name) + srcs,
+    srcs = srcs_list(original_name) + srcs,
     deps = deps,
     copts = default_copts + copts,
     linkstatic = 1,
