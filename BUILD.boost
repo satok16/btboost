@@ -428,6 +428,10 @@ boost_library(
 )
 
 boost_library(
+    name = "enable_if",
+)
+
+boost_library(
     name = "enable_shared_from_this",
 )
 
