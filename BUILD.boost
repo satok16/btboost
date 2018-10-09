@@ -464,6 +464,12 @@ boost_library(
 )
 
 boost_library(
+    name = "format",
+    deps = [
+    ],
+)
+
+boost_library(
     name = "function",
     deps = [
         ":bind",
