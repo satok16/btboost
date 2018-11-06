@@ -87,7 +87,7 @@ def boost_library(name, defines=None, includes=None, hdrs=None, textual_hdrs=Non
 def boost_deps():
   native.new_http_archive(
     name = "boost",
-    url = "https://storage.googleapis.com/satok_coldline_bucket_us/bt_public/boost_1_63_0.tar.bz2",
+    url = "https://storage.googleapis.com/satok_coldline_bucket_us/bt_public/boost_1_63_0.2.tar.bz2",
     build_file = "@com_github_satok16_btboost//:BUILD.boost",
     type = "tar.bz2",
     strip_prefix = "boost_1_63_0/",
