@@ -229,7 +229,7 @@ genrule(
         "mkdir -p inc3x",
         "cd inc3x",
         "ln -sf $$PYTHON_INCLUDE_DIR/* .",
-        "[[ ! -e osmodule.h ]] && touch osmodule.h || :",
+        "for out in $(OUTS); do [[ ! -e $$(basename $$out) ]] && echo $$out not found.  Create dummy. && touch $$(basename $$out) || : ; done",
     ]),
 )
 
