@@ -113,6 +113,7 @@ out_files_3x = [
     "inc3x/code.h",
     "inc3x/compile.h",
     "inc3x/complexobject.h",
+    "inc3x/context.h",
     "inc3x/datetime.h",
     "inc3x/descrobject.h",
     "inc3x/dictobject.h",
