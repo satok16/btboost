@@ -89,16 +89,15 @@ def boost_library(name, defines=None, includes=None, hdrs=None, textual_hdrs=Non
 def boost_deps():
   http_archive(
     name = "boost",
-    url = "https://storage.googleapis.com/satok_coldline_bucket_us/bt_public/boost_1_63_0.2.tar.bz2",
+    url = "https://storage.googleapis.com/satok_coldline_bucket_us/bt_public/boost_1_63_0.3.tar.bz2",
     build_file = "@com_github_satok16_btboost//:BUILD.boost",
     type = "tar.bz2",
     strip_prefix = "boost_1_63_0/",
-    sha256 = "28e833d37e18640ba4eff5ccbc37282b4de3eb61c03f237e5645b8ab64e262ba",
   )
 
 def local_boost_deps():
   native.new_local_repository(
-    name = "boost",
+    name = "boost_local",
     path = "/tmp/boost_1_63_0",
     build_file = "@com_github_satok16_btboost//:BUILD.boost",
   )
